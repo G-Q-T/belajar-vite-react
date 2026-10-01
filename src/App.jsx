@@ -21,7 +21,7 @@ function App() {
   };
   const handleHapus = (id) =>{
     setListPeserta(listPeserta.filter((item) => item.id !== id));
-    if (id=== EditPeserta.id)  {
+    if (EditPeserta && id === EditPeserta.id)  {
       setEditPeserta(null);
     }
   }
@@ -33,7 +33,7 @@ function App() {
     {/* callback */}
   {listPeserta.map((itemSiswa) => (
     <DataPeserta key={itemSiswa.id} peserta={itemSiswa} onEdit={setEditPeserta} onHapus={handleHapus}/>
-  ))};
+  ))}
   {/* listPeserta.map({itemSiswa}) => [
 
   ]; */}
