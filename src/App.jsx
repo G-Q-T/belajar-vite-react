@@ -14,7 +14,6 @@ import MainLayout from './Pages/MainLayout.jsx';
 import ListUser from './User/List.jsx';
 
 function App() {
-<<<<<<< HEADgit add src/App.jsx src/components/FormPeserta.jsx
   const [listPeserta, setListPeserta] = useState(Siswa);
   const [EditPeserta, setEditPeserta] = useState(null);
   
@@ -32,17 +31,16 @@ function App() {
       setEditPeserta(null);
     }
   }
-  return (
-  <>
-  {/* map : bisa buat looping */}
+  // return (
+  // <>
+  // {/* map : bisa buat looping */}
 
-    <FormPeserta OnSimpan = {handleSubmit} pesertaEdit={EditPeserta}/>
-    {/* callback */}
-  {listPeserta.map((itemSiswa) => (
-    <DataPeserta key={itemSiswa.id} peserta={itemSiswa} onEdit={setEditPeserta} onHapus={handleHapus}/>
-  ))}
-  {/* listPeserta.map({itemSiswa}) => [
-=======
+  //   <FormPeserta OnSimpan = {handleSubmit} pesertaEdit={EditPeserta}/>
+  //   {/* callback */}
+  // {listPeserta.map((itemSiswa) => (
+  //   <DataPeserta key={itemSiswa.id} peserta={itemSiswa} onEdit={setEditPeserta} onHapus={handleHapus}/>
+  // ))}
+  // {/* listPeserta.map({itemSiswa}) => 
   return(
     <>
 
@@ -50,7 +48,6 @@ function App() {
     <Routes>
       <Route path='/' element={<Navigate to="/Login" replace/>}></Route>
       <Route element={<MainLayout/>}>
->>>>>>> fc4d58b (eror ni)
 
       <Route path='/Dashboard' element={<Dashboard/>}></Route>
       <Route path='/User' element={<ListUser/>}></Route>
