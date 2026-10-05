@@ -1,0 +1,33 @@
+import { Container,Card,Row,Col } from "react-bootstrap";
+
+const Dashboard = () =>{
+    return(
+        <> 
+        <Container>
+        <h3 className="mb-4">ringkasan</h3>
+        <Row className="g-4">
+        <Col md={4}>
+        <Card className="shadow-sm p-3 border-0">
+            <Card.Subtitle className="text-muted mb-2">All sales</Card.Subtitle>
+            <Card.Title>Rp 20.000.000</Card.Title>
+        </Card>
+        </Col>
+        <Col md={4}>
+        <Card className="shadow-sm p-3 border-0">
+            <Card.Subtitle className="text-muted mb-2">All sales</Card.Subtitle>
+            <Card.Title>Rp 20.000.000</Card.Title>
+        </Card>
+        </Col>
+        <Col md={4}>
+        <Card className="shadow-sm p-3 border-0">
+            <Card.Subtitle className="text-muted mb-2">All sales</Card.Subtitle>
+            <Card.Title>Rp 20.000.000</Card.Title>
+        </Card>
+        </Col>
+        </Row>
+        </Container>
+        </>
+    );
+};
+
+export default Dashboard;
